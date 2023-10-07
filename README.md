@@ -16,6 +16,8 @@
 5. Users can view their previously booked tickets (Both confirmed and cancelled tickets).
 6. Tickets are downloadable as pdf document.
 
+<img alt="website" src="https://github.com/Decoder2003/Space-Trek/blob/main/staticfiles/img/web.png">
+
 ### Tech Stack:
 - Python (Django==3.1.2)
 - html to pdf (xhtml2pdf==0.2.5)
