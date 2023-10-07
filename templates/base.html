@@ -5,8 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
+
+    <!-- Css Stylesheet -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  <link rel="stylesheet" media=" screen and (max-width:768px)" href="{% static 'css/mobile.css' %}" />
+  <!-- unicons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+  <!-- favicon -->
+  <link rel="icon" href="/Imgs/icons/Vector.png" />
+
+  <!-- script tag -->
+  <script defer src="/JS/script.js"></script>
+
+  <!-- ScrollReveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- swiper js -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
+    <header class="header">
+        <!-- logo -->
+        <div class="logo">
+          <img src="{% static 'imgs/Logo/logo.png' %}" width="100%" alt="spacetrek" />
+        </div>
+  
+        <!-- navbar -->
+        <nav class="navbar">
+          <ul class="navlists">
+            <li class="navlist cursor-scale small"><a href="#home">Home</a></li>
+            <li class="navlist cursor-scale small"><a href="#restaurants">Hotels</a></li>
+            <li class="navlist cursor-scale small"><a href="#restaurants">Restaurants</a></li>
+            <li class="navlist cursor-scale small"><a href="#tours">Tours</a></li>
+            <li class="navlist cursor-scale small"><a href="#destinations">Destinations</a></li>
+            <li class="navlist cursor-scale small"><a href="#activities">Activities</a></li>
+            <li class="navlist cursor-scale small"><a href="#contact">Training</a></li>
+            <li class="navlist cursor-scale small"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+  
+        <!-- user || navigator -->
+        <!-- <div class="user-profile">
+            <div class="profile-name">
+              <h2>
+                <span class="hello"> Hello, </span>
+                <span class="indiviual-name"> Riad Khan </span>
+              </h2>
+            </div>
+  
+            <div class="profile-pic">
+              <img
+                src="/Imgs/ProfilePic/124164909_2212008852330390_5501660797980127002_n (1).jpg"
+                alt=""
+              />
+            </div>
+          </div> -->
+      </header>
     {% block content %}
     {% endblock %}
 </body>
