@@ -10,7 +10,7 @@ class User(AbstractUser):
         return f"{self.id}: {self.first_name} {self.last_name}"
 
 class Place(models.Model):
-    city = models.CharField(max_length=64)
+    city = models.CharField(max_length=64, null=True)
     landingSite = models.CharField(max_length=64)
     code = models.CharField(max_length=3)
     planet = models.CharField(max_length=64)
@@ -91,6 +91,25 @@ class Ticket(models.Model):
     mobile = models.CharField(max_length=20,blank=True)
     email = models.EmailField(max_length=45, blank=True)
     status = models.CharField(max_length=45, choices=TICKET_STATUS)
+
+    def __str__(self):
+        return self.ref_no
+    
+class Training(models.Model):
+    # user = models.ForeignKey(User,on_delete=models.CASCADE,related_name="trainings", blank=True, null=True)
+    ref_no = models.CharField(max_length=6, unique=True)
+    desc = models.TextField(default='')
+    course_sdate = models.DateField(blank=True, null=True)
+    course_edate = models.DateField(blank=True, null=True)
+    course_fare = models.FloatField(blank=True,null=True)
+    other_charges = models.FloatField(blank=True,null=True)
+    # coupon_used = models.CharField(max_length=15,blank=True)
+    # coupon_discount = models.FloatField(default=0.0)
+    total_fare = models.FloatField(blank=True, null=True)
+    last_date = models.DateTimeField(default=datetime.now)
+    mobile = models.CharField(max_length=20,blank=True)
+    email = models.EmailField(max_length=45, blank=True)
+    # status = models.CharField(max_length=45, choices=TICKET_STATUS)
 
     def __str__(self):
         return self.ref_no

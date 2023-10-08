@@ -416,6 +416,22 @@ def bookings(request):
         })
     else:
         return HttpResponseRedirect(reverse('login'))
+    
+def planner(request):
+    if request.user.is_authenticated:
+        return render(request, 'flight/planner.html')
+    else:
+        return HttpResponseRedirect(reverse('login'))
+
+def training(request):
+    if request.user.is_authenticated:
+        trainings = Training.objects.all().order_by('course_sdate')
+        return render(request, 'flight/training.html', {
+            'page': 'trainings',
+            'trainings': trainings
+        })
+    else:
+        return HttpResponseRedirect(reverse('login'))
 
 @csrf_exempt
 def cancel_ticket(request):

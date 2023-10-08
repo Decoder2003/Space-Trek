@@ -39,6 +39,12 @@
           <li class="nav-item {% if page == 'bookings' %}active{% endif %}">
             <a class="nav-link" style="color:black!important" href="{% url 'bookings' %}">My Bookings</a>
           </li>
+          <li class="nav-item {% if page == 'training' %}active{% endif %}">
+            <a class="nav-link" style="color:black!important" href="{% url 'training' %}">Training</a>
+          </li>
+          <li class="nav-item {% if page == 'planner' %}active{% endif %}">
+            <a class="nav-link" style="color:black!important" href="{% url 'planner' %}">Trip Planner</a>
+          </li>
         </ul>
         <ul class="navbar-nav">
           {% if not user.is_authenticated %}
@@ -147,5 +153,6 @@
       </div>
     </footer>
   </div>
+  <script src="//code.tidio.co/sg1vmeavi3k0xkn23skjnppjlzcczldw.js" async></script>
 </body>
 </html>
