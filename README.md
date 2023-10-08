@@ -8,6 +8,8 @@
 <p> Space Trek is a space exploration company that offers space tourism tours to different planets in the solar system. It is one of the companies to offer such tours, and it is currently developing new technologies to make space travel more accessible and affordable. Space Trek tours will take passengers on a journey to some of the most iconic and mysterious places in the solar system.
 </p>
 
+<img alt="website" src="https://github.com/Decoder2003/Space-Trek/blob/main/staticfiles/img/home.jpeg">
+
 ### Features
 1. Users can create their user account.
 2. Users can book both one-way as well as round-trip tickets.
@@ -15,8 +17,10 @@
 4. Users can cancel their booked tickets.
 5. Users can view their previously booked tickets (Both confirmed and cancelled tickets).
 6. Tickets are downloadable as pdf document.
+7. Space travel training service available for the user (tourist).
 
 Project Demo Link - [https://tinyurl.com/Space-Trek-Demo](https://tinyurl.com/Space-Trek-Demo) 
+
 <img alt="website" src="https://github.com/Decoder2003/Space-Trek/blob/main/staticfiles/img/web.png">
 
 ### Tech Stack:
