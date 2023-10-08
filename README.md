@@ -16,6 +16,7 @@
 5. Users can view their previously booked tickets (Both confirmed and cancelled tickets).
 6. Tickets are downloadable as pdf document.
 
+Project Demo Link - [https://tinyurl.com/Space-Trek-Demo](https://tinyurl.com/Space-Trek-Demo) 
 <img alt="website" src="https://github.com/Decoder2003/Space-Trek/blob/main/staticfiles/img/web.png">
 
 ### Tech Stack:
@@ -37,3 +38,5 @@
 ### Future Scope:
 - Trip planner - with help of openAI, we will be integrating the AI to recommend trips on the basis of user interest.
 - Moblie App - Looking to launch an andriod version of SpaceTrek to increase the ease-of-acces.
+
+Project Demo Link - [https://tinyurl.com/Space-Trek-Demo](https://tinyurl.com/Space-Trek-Demo) 
