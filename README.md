@@ -1,7 +1,7 @@
 <h1 style="font-size: 50px"> <img style="width: 4%;margin-bottom:-10px;" src="https://github.com/Decoder2003/Space-Trek/blob/main/staticfiles/img/icon.png">  Space Trek </h1>
 
 ### Team Name - Binary Bosses
-### Porblem Statement - Planetary Tourism Office
+### Problem Statement - Planetary Tourism Office
 ### Team Leader Email - kunljain222@gmail.com
 
 ### Brief of the Prototype:
